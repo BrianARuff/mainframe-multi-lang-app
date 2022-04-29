@@ -32,6 +32,6 @@ server.post("/api/add", (req, res) => {
   );
 });
 
-server.listen(3000, () => {
+server.listen(process.env.PORT, () => {
   console.log("Node server running on port 3000");
 });
