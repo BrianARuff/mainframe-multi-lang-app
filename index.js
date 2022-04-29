@@ -5,7 +5,8 @@ const sys = require("child_process");
 const path = require("path");
 
 server.use(express.json());
-server.use(cors());
+server.use(cors({ origin: "*" }));
+
 
 server.post("/api/add", (req, res) => {
   const cAppPath = path.join(__dirname + "/c-app/app.exe");
