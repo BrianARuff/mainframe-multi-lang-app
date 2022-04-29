@@ -4,6 +4,7 @@ const cors = require("cors");
 const sys = require("child_process");
 const path = require("path");
 
+// server config
 server.use(express.json());
 server.use(cors({ origin: "*" }));
 
