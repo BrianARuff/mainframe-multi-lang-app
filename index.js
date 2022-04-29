@@ -9,7 +9,7 @@ server.use(express.json());
 server.use(cors({ origin: "*" }));
 
 server.post("/api/add", (req, res) => {
-  const cAppPath = path.join(__dirname + "/c-app/main");
+  const cAppPath = path.join("./" + __dirname + "/c-app/main");
   const [one, two, three] = req.body;
 
   sys.exec(
